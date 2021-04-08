@@ -1,10 +1,3 @@
-#footer{
-    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
-}
-
-#footer a{
-    color: white;
-}
 
 #main .carousel-inner img{
     max-height: 70vh;
@@ -39,3 +32,4 @@
 .btn-platzi:hover{
     background-color: #82AD36 ;
 }
+
