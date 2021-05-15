@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="./CSS/styles.css" />
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-offset="66,6">
 
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container-fluid ">
           <a class="navbar-brand" href="#">
             <img src="./imagenes/platzi-logo.png" alt="logo platzi">
@@ -20,22 +20,22 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                <a class="nav-link active" aria-current="page" href="#main">La conferencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Los oradores</a>
+                <a class="nav-link" href="#speakers">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Lugar y fecha</a>
+                <a class="nav-link" href="#place-time">Lugar y fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Conviertete en orador</a>
+                <a class="nav-link" href="#conviertete-en-orador" >Conviertete en orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-platzi" href="#">Compra tiquets</a>
+                <a class="nav-link text-platzi" href="#staticBackdrop" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Compra tiquets</a>
               </li>
             </ul>
           </div>
@@ -62,7 +62,7 @@
                   <h1>Platzi Conf Hawaii</h1>
                   <p class="d-none d-md-block">Platzi conf llega por primera vez a Hawaii</p>
                   <a href="#" class="btn btn-outline-light">Quiero ser un orador</a>
-                  <button  class="btn btn-platzi">Comprar tickets</button>
+                  <button  class="btn btn-platzi" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Comprar tickets</button>
                 </div>
               </div>
             </div>
@@ -203,15 +203,21 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Buy Tickets</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
+      <form action="">
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </div>
+       </form>
+       <div class="alert alert-danger mx-auto" role="alert">Recibirás un correo de confirmación! </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        <button type="button" class="btn btn-primary">Buy</button>
       </div>
     </div>
   </div>
