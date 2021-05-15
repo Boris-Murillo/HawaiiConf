@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #main .carousel-inner img{
     max-height: 70vh;
@@ -44,4 +45,12 @@
 #place-time{
     background-color: #343A40;
     color: white;
+=======
+#header img{
+    width: 8rem;
+}
+
+.text-platzi{
+    color: #97C93E !important;
+>>>>>>> header
 }
